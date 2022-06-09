@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="src/style.css" />
+    <div class="container" id="container">
+      <h1>Daily Weather</h1>
+      <form id="search">
+        <input
+          type="text"
+          id="city"
+          placeholder="City Name"
+          autocomplete="off"
+          autofocus="on"
+        />
+        <input type="submit" id="go" value="Go" />
+
+        <button id="current">Current</button>
+      </form>
+      <form>
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li id="location">City</li>
+              <li id="date"></li>
+              <li id="time"></li>
+            </ul>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col-6" id="actual">
+          <span id="number">Temperature</span>
+          <span id="Celsius">C°</span>
+        </div>
+        <div class="col-6" id="stats">
+          <ul>
+            <li id="humidity">Humidity: %</li>
+            <li id="wind">Wind: km/h</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="src/action.js"></script>
+  </body>
+</html>

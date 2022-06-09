@@ -1,0 +1,45 @@
+#container {
+  display: block;
+  margin: 25px 20px;
+  padding: 15px;
+  border: #033768 solid 2px;
+}
+h1 {
+  color: blue;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2 {
+  color: #033768;
+  font-size: 20px;
+  padding-left: 40px;
+}
+
+form {
+  margin: 15px auto;
+  padding: 5px;
+}
+#current {
+  background: green;
+  color: beige;
+}
+#go {
+  background: blue;
+  color: beige;
+}
+#picture {
+  color: #ac5a71;
+  font-size: 30px;
+}
+#actual {
+  font-size: 50px;
+  color: blue;
+  text-align: center;
+}
+#stats {
+  font-size: 20px;
+  color: blue;
+}
+ul {
+  list-style: none;
+}
